@@ -1,0 +1,23 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  username: postgres
+  password: 159357
+  pool: 5
+
+
+development:
+  <<: *default
+  database: netflix_clone_development
+
+  
+test:
+  <<: *default
+  database: netflix_clone_test
+
+production:
+  <<: *default
+  database: netflix_clone_production
+  username: netflix_clone
+  password: <%= ENV["NETFLIX_CLONE_DATABASE_PASSWORD"] %>
