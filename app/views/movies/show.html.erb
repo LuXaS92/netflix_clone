@@ -1,2 +1,15 @@
-<h1>Movies#show</h1>
-<p>Find me in app/views/movies/show.html.erb</p>
+<div class="row">
+  <div class="col-md-4">
+    <%= image_tag @movie.image_url, class: "img-fluid" if @movie.image_url %>
+  </div>
+  <div class="col-md-8">
+    <h1><%= @movie.title %></h1>
+    <p><strong>Release Year:</strong> <%= @movie.release_year %></p>
+    <p><%= @movie.description %></p>
+    <% if @movie.video_url %>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="<%= @movie.video_url %>" allowfullscreen></iframe>
+      </div>
+    <% end %>
+  </div>
+</div>
