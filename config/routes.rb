@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  devise_for :users
-  resources :movies, only: [ :index, :show ]
+  root "movies#index"   # Página inicial da Netflix clone
 
-  get "pages/Home"
-  get "movies/index"
-  get "movies/show"
+  resources :users, only: [ :new, :create, :show ]  # Para gestão de usuários
+  resources :movies, only: [ :index, :show ]        # Para exibir filmes
+  resources :watchlists, only: [ :create, :destroy ] # Para favoritos
+  resources :viewings, only: [ :create, :update ]   # Para registrar visualizações
 
-  get "up" => "rails/health#show", as: :rails_health_check
-
-  get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
-  get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
+  # Rotas para login e logout
+  get "login", to: "sessions#new"
+  post "login", to: "sessions#create"
+  delete "logout", to: "sessions#destroy"
 end

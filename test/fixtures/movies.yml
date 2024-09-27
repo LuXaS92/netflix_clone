@@ -3,9 +3,11 @@
 one:
   title: MyString
   description: MyText
-  release_year: 1
+  genre: MyString
+  year: 1
 
 two:
   title: MyString
   description: MyText
-  release_year: 1
+  genre: MyString
+  year: 1
