@@ -1,2 +1,68 @@
 <h1>Movies#index</h1>
 <p>Find me in app/views/movies/index.html.erb</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Netflix Clone</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/movies">Filmes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Entrar</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid p-5 bg-dark text-white hero-banner">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Destaque do Momento</h1>
+      <p>Descrição curta do filme ou série em destaque. Assista agora.</p>
+      <a href="#" class="btn btn-danger">Assistir</a>
+      <a href="#" class="btn btn-secondary">Mais informações</a>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <h2>Populares na Netflix</h2>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="poster1.jpg" class="d-block w-100" alt="Poster">
+          </div>
+          <div class="col-md-3">
+            <img src="poster2.jpg" class="d-block w-100" alt="Poster">
+          </div>
+          <!-- Continue adicionando colunas -->
+        </div>
+      </div>
+      <!-- Próximos slides -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+    
+  </div>
+</div>
+
+<footer class="bg-dark text-center text-white py-3">
+  <div class="container">
+    <p>&copy; 2024 Netflix Clone. Todos os direitos reservados.</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#" class="text-white">Termos de Uso</a></li>
+      <li class="list-inline-item"><a href="#" class="text-white">Política de Privacidade</a></li>
+    </ul>
+  </div>
+</footer>

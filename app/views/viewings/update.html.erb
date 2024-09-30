@@ -1,2 +1,5 @@
-<h1>Viewings#update</h1>
-<p>Find me in app/views/viewings/update.html.erb</p>
+<%= form_with model: @movie, local: true do |f| %>
+  <%= f.label :poster_image %>
+  <%= f.file_field :poster_image %>
+  <%= f.submit %>
+<% end %>

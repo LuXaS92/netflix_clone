@@ -18,11 +18,17 @@ gem "jbuilder"
 
 gem "devise"  # Para autenticação de usuários
 
-gem "pundit"  # Para autorização
+gem "carrierwave", "~> 2.0"
 
-gem "kaminari"  # Para paginação
+gem "mini_magick", "~> 4.10"
 
-gem "ransack"  # Para busca avançada
+gem "bootstrap", "~> 5.1.0"
+
+gem "jquery-rails"
+
+gem "kaminari"
+
+gem "ransack"
 
 gem "active_model_serializers"  # Para APIs
 
