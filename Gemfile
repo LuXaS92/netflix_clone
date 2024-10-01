@@ -18,7 +18,7 @@ gem "jbuilder"
 
 gem "devise"  # Para autenticação de usuários
 
-gem "carrierwave", "~> 2.0"
+gem "carrierwave", "~> 3.0"
 
 gem "mini_magick", "~> 4.10"
 
