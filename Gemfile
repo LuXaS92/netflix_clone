@@ -22,7 +22,7 @@ gem "carrierwave", "~> 2.0"
 
 gem "mini_magick", "~> 4.10"
 
-gem "bootstrap", "~> 5.1.0"
+gem "bootstrap", "~> 5.3.3"
 
 gem "jquery-rails"
 
